@@ -1,0 +1,44 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.1.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-ble-central": "^1.4.1",
+    "cordova-plugin-screen-orientation": "^3.0.2",
+    "cordova-plugin-whitelist": "^1.3.5",
+    "es6-promise-plugin": "^4.2.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-bluetoothle": {},
+      "cordova-plugin-ble-central": {
+        "ACCESS_BACKGROUND_LOCATION": "true"
+      },
+      "cordova-plugin-bluetooth-serial": {},
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-screen-orientation": {}
+    },
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "dependencies": {
+    "cordova-plugin-bluetooth-serial": "^0.4.7",
+    "cordova-plugin-bluetoothle": "^6.6.1",
+    "cordova-plugin-x-toast": "^2.7.3"
+  }
+}
